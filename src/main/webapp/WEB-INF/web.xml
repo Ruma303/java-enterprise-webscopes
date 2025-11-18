@@ -44,4 +44,14 @@
 		<servlet-name>ApplicationScopeServlet2</servlet-name>
 		<url-pattern>/ApplicationScopeServlet2</url-pattern>
 	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>SessionScope</servlet-name>
+		<servlet-class>com.sessionscope.servlets.SessionScope</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SessionScope</servlet-name>
+		<url-pattern>/SessionScope</url-pattern>
+	</servlet-mapping>
 </web-app>
