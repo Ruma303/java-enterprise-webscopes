@@ -54,4 +54,13 @@
 		<servlet-name>SessionScope</servlet-name>
 		<url-pattern>/SessionScope</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FormPageServlet</servlet-name>
+		<servlet-class>com.requestscope.servlets.FormPageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FormPageServlet</servlet-name>
+		<url-pattern>/formRequestPage</url-pattern>
+	</servlet-mapping>
 </web-app>
