@@ -63,4 +63,13 @@
 		<servlet-name>FormPageServlet</servlet-name>
 		<url-pattern>/formRequestPage</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ResponseHeaderExample</servlet-name>
+		<servlet-class>com.responsescope.servlets.ResponseHeaderExample</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResponseHeaderExample</servlet-name>
+		<url-pattern>/responseHeaderExample</url-pattern>
+	</servlet-mapping>
 </web-app>
