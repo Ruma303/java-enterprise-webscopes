@@ -72,4 +72,32 @@
 		<servlet-name>ResponseHeaderExample</servlet-name>
 		<url-pattern>/responseHeaderExample</url-pattern>
 	</servlet-mapping>
+	
+	<!-- Servlet -->
+    <servlet>
+        <servlet-name>ErrorHandling</servlet-name>
+        <servlet-class>com.errorhandlingexample.servlets.ErrorHandling</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorHandling</servlet-name>
+        <url-pattern>/ErrorHandling</url-pattern>
+    </servlet-mapping>
+	
+	<!-- Gestione eccezione personalizzata -->
+    <error-page>
+        <exception-type>com.errorhandlingexample.exceptions.MyException</exception-type>
+        <location>/myExceptionErrorPage.jsp</location>
+    </error-page>
+
+    <!-- Gestione errore 404 -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/customNotFoundPage.jsp</location>
+    </error-page>
+    
+    <!-- Gestione errore 500 -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/customServerError.jsp</location>
+	</error-page>
 </web-app>
